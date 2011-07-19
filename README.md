@@ -5,6 +5,8 @@ This gradient generator is intended to create a simple UI for a user to generate
 The source code is available on github (https://github.com/dgalarza/CSS3-Gradient-Generator) for users who are interested in seeing how it works.  Feel free to fork and
 make use of it elsewhere if you'd like.
 
+This fork includes all html, css, js, and supporting images for maximum clarity.
+
 ## Features
 * Webkit and Mozilla gradient syntax generation
 * RGB or HEX color support
