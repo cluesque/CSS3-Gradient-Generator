@@ -138,7 +138,6 @@ $(function () {
 			// Apply style for live sample
 			generator.sample[0].style.cssText = 'background-image: ' + generator.generateWebkitGradient();
 			generator.sample.css('background-image', generator.generateMozGradient());
-			generator.sample.css('background-image', "-o-" + generator.generateGradient());
 			
 			// Update string
 			generator.updateGradientString();
