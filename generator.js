@@ -216,7 +216,11 @@ $(function () {
 		*/
 		fetchGradientStart : function () {
 			var gradientProps = generator.gradientProps;
-			return gradientProps.xStart + ' ' + gradientProps.yStart;
+			var gradientString = gradientProps.xStart + ' ' + gradientProps.yStart;
+			if(generator.gradientProps.type == 'radial') {
+			    gradientString = gradientString + ', 0';
+			}
+			return gradientString;
 		},
 		
 		/**
@@ -224,7 +228,11 @@ $(function () {
 		*/
 		fetchGradientEnd : function () {
 			var gradientProps = generator.gradientProps;
-			return gradientProps.xEnd + ' ' + gradientProps.yEnd;
+			var gradientString = gradientProps.xEnd + ' ' + gradientProps.yEnd;
+			if(generator.gradientProps.type == 'radial') {
+			    gradientString = gradientString + ', 50';
+			}
+			return gradientString;
 		},
 		
 		/**
